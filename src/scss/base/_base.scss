@@ -1,0 +1,20 @@
+/* Reset */
+
+:global(*,
+*::after,
+*::before) {
+    margin: 0;
+    padding: 0;
+    /* border and the padding is no longer added to the total width and total height of the element */
+    box-sizing: inherit;
+}
+
+:global(html) {
+    font-size: 62.5%;
+}
+
+:global(body){
+    font-family: 'Rubik', sans-serif;
+    font-weight: 400;
+    background-color: $ui-100;
+}

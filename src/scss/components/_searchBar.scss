@@ -1,0 +1,42 @@
+.searchBar{
+    min-width: 50rem;
+    height: 4.8rem;
+    border-radius: 3.6rem;
+    background-color: $ui-100;
+    display: flex;
+    align-items: center;
+
+    &__label{
+        display: block;
+    }
+    &__icon{
+        height: 2.4rem;
+        width: 2.4rem;
+        margin-left: 1.9rem;
+        margin-right: 2.9rem;
+    }
+
+    &__input{
+        width: 80%;
+        height: 2.4rem;
+        background-color: transparent;
+        border: none;
+        font-size: 16px;
+        font-family: 'Rubik', sans-serif;
+        font-weight: 300;
+        color: $ui-600;
+
+    }
+    ::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+        color: $ui-600;
+        opacity: 1; /* Firefox */
+    }
+    
+    :-ms-input-placeholder { /* Internet Explorer 10-11 */
+        color: $ui-600;
+    }
+    
+    ::-ms-input-placeholder { /* Microsoft Edge */
+        color: $ui-600;
+    }
+}
